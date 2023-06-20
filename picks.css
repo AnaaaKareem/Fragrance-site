@@ -1,0 +1,61 @@
+body {
+    background-color: #000000;
+}
+
+.typewriter {
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+    white-space: nowrap;
+    font-size: large;
+    font-family: monospace;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.row {
+    width: 100%;
+}
+
+.perfume-info {
+    position: relative;
+}
+
+.perfume-info::before,
+.perfume-info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-color: white;
+}
+
+.perfume-info::before {
+    left: 0;
+}
+
+.perfume-info::after {
+    right: 0;
+}
