@@ -22,8 +22,10 @@ learnMoreButtons.forEach((button) => {
             if (i >= text.length) {
                 clearInterval(typingInterval);
                 hideButton.classList.remove("d-none");
+                // Store the typed text in a data attribute for future use
+                description.setAttribute("data-typed-text", text);
             }
-        }, 50);
+        }, 40);
     });
 });
 
@@ -37,10 +39,21 @@ hideButtons.forEach((button) => {
         const description = button.parentNode.querySelector(".description");
         const learnMoreButton = button.parentNode.querySelector(".learn-more");
 
-        // Hide the description and hide button, and show the learn more button
-        description.classList.add("d-none");
-        button.classList.add("d-none");
-        learnMoreButton.classList.remove("d-none");
+        // Untype the text
+        const typedText = description.getAttribute("data-typed-text");
+        description.innerHTML = "";
+        let i = typedText.length - 1;
+        const untypingInterval = setInterval(() => {
+            description.innerHTML = typedText.substring(0, i);
+            i--;
+            if (i < 0) {
+                clearInterval(untypingInterval);
+                // Hide the description and hide button, and show the learn more button
+                description.classList.add("d-none");
+                button.classList.add("d-none");
+                learnMoreButton.classList.remove("d-none");
+            }
+        }, 0);
     });
 });
 

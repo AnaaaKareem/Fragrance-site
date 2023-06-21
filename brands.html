@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Character encoding and viewport for responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Compatibility with Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Favicon for the website -->
+  <link rel="icon" type="image/x-icon" href="Pictures/Interation-Icons/Logo-Black.png">
+  <!-- Title for the document -->
+  <title>Brands</title>
+  <!-- Bootstrap 5 stylesheet from CDN -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JavaScript bundle from CDN -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--Custom StyleSheet for the brands page -->
+  <link href="brands.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Header-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container-fluid">
+    <!--Logo-->
+    <a class="navbar-brand" href="Homepage.html">
+      <img src="Pictures/Interation-Icons/Logo-Black.png" style="filter: invert(100%); width: 40px; height: 40px" alt="logo">
+    </a>
+    <!--Offcanvas toggle button-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Offcanvas content-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header bg-black">
+        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <!--Close button-->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="filter: invert(100%)" aria-label="Close"></button>
+      </div>
+      <!--Offcanvas links-->
+      <div class="offcanvas-body bg-black">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <span class="fw-bold d-none">Home</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Homepage.html" data-bs-toggle="tooltip" title="Home">
+              <div class="d-flex flex-column align-items-center">
+                <img src="Pictures/Interation-Icons/home.png" width="30px" height="30px" style="filter: invert(100%)" alt="Home">
+                <span class="fw-bold text-white">Home</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="brands.html" data-bs-toggle="tooltip" title="Brands">
+              <div class="d-flex flex-column align-items-center">
+                <img src="Pictures/Interation-Icons/brand.png" width="30px" height="30px" style="filter: invert(100%)" alt="Brands">
+                <span class="fw-bold text-white">Brands</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="picks.html" data-bs-toggle="tooltip" title="Our Picks">
+              <div class="d-flex flex-column align-items-center">
+                <img src="Pictures/Interation-Icons/service.png" width="30px" height="30px" style="filter: invert(100%)" alt="Our Picks">
+                <span class="fw-bold text-white">Our Picks</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact-us.html" data-bs-toggle="tooltip" title="Contact Us">
+              <div class="d-flex flex-column align-items-center">
+                <img src="Pictures/Interation-Icons/email.png" width="30px" height="30px" style="filter: invert(100%)" alt="Contact Us">
+                <span class="fw-bold text-white">Contact Us</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- horizontal line -->
+<hr class="dropdown-divider">
+<!--Header-->
+
+<!-- Line breaks for spacing -->
+<br><br><br><br><br>
+
+<!-- Container for brand logos -->
+<div class="container">
+  <!-- Box for Emporio Armani logo and link -->
+  <div class="box" data-link="https://www.armanibeauty.co.uk/discover-armani-beauty/together-stronger.html">
+    <img src="Pictures/Brand-Logo-Images/Emporio-Armani-Black.png" alt="Emporio Armani">
+    <hr>
+    <span>Emporio Armani</span>
+  </div>
+  <!-- Box for Givenchy logo and link -->
+  <div class="box" data-link="https://www.givenchybeauty.com/us/fragrance-2/">
+    <img src="Pictures/Brand-Logo-Images/Givenchy-Black.png" alt="Givenchy">
+    <hr>
+    <span>Givenchy</span>
+  </div>
+  <!-- Box for Gucci logo and link -->
+  <div class="box" data-link="https://www.gucci.com/uk/en_gb/st/capsule/gucci-guilty-fragrance">
+    <img src="Pictures/Brand-Logo-Images/Gucci-Black.png" alt="Gucci">
+    <hr>
+    <span>Gucci</span>
+  </div>
+</div>
+
+<!-- Container for brand logos -->
+<div class="container">
+  <!-- Box for Hugo Boss logo and link -->
+  <div class="box" data-link="https://www.hugoboss.com/fragrances-men/">
+    <img src="Pictures/Brand-Logo-Images/Hugo-Boss-Black.png" alt="Hugo Boss">
+    <hr>
+    <span>Hugo Boss</span>
+  </div>
+  <!-- Box for Paco Rabanne logo and link -->
+  <div class="box" data-link="https://www.pacorabanne.com/uk/en_GB/fragrance/homepageFragrance">
+    <img src="Pictures/Brand-Logo-Images/Paco-Rabanne-Black.png" alt="Paco Rabanne">
+    <hr>
+    <span>Paco Rabanne</span>
+  </div>
+  <!-- Box for Tom Ford logo and link -->
+  <div class="box" data-link="https://www.tomford.co.uk/beauty/fragrance/">
+    <img src="Pictures/Brand-Logo-Images/Tom-Ford-Black.png" alt="Tom Ford">
+    <hr>
+    <span>Tom Ford</span>
+  </div>
+</div>
+
+<!-- Divider section with white background and height of 200px -->
+<div class="divider bg-white" style="height: 200px; margin: 1.5rem 0;">
+  <!-- Title with black text and white text outline -->
+  <h1 class="text-center text-black fw-bold" style="font-size: 100px; padding-top: 30px;
+        text-shadow: 2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF;
+        -webkit-text-stroke: 2px #000000; -webkit-text-fill-color: transparent;">END.</h1>
+</div>
+
+<!-- Script tag to include Bootstrap JavaScript library -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Script tag to include custom JavaScript file for brand logos -->
+<script src="brands.js"></script>
+</body>
+</html>
